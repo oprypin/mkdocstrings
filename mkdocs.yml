@@ -38,8 +38,6 @@ extra_css:
 
 markdown_extensions:
   - admonition
-  - codehilite:
-      guess_lang: false
   - pymdownx.emoji
   - pymdownx.magiclink
   - pymdownx.superfences
