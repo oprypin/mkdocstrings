@@ -321,7 +321,7 @@ td p {
 
 ## Recommended style (ReadTheDocs)
 
-Here are some CSS rules for the builtin *ReadTheDocs* theme:
+Here are some CSS rules for the built-in *ReadTheDocs* theme:
 
 ```css
 /* Indentation. */
