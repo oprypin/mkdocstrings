@@ -199,7 +199,7 @@ class BaseRenderer(ABC):
             The rendered template as HTML.
         """  # noqa: DAR202 (excess return section)
 
-    def get_anchor(self, data: Any) -> Optional[str]:
+    def get_anchor(self, data: CollectorItem) -> Optional[str]:
         """
         Return the canonical identifier (HTML anchor) for a collected item.
 
@@ -389,6 +389,8 @@ class Handlers:
     Do not instantiate this directly. [The plugin][mkdocstrings.plugin.MkdocstringsPlugin] will keep one instance of
     this for the purpose of caching. Use [mkdocstrings.plugin.MkdocstringsPlugin.get_handler][] for convenient access.
     """
+
+    current_page: Optional[str] = None
 
     def __init__(self, config: dict) -> None:
         """
