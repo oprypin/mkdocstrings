@@ -1,3 +1,0 @@
-"""
-Link to [something.Else][].
-"""

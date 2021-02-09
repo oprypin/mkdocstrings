@@ -64,7 +64,7 @@ class AutorefsPlugin(BasePlugin):
         Return a site-relative URL with anchor to the identifier, if it's present anywhere.
 
         Arguments:
-            anchor: The identifier (one that [collect][mkdocstrings.handlers.base.BaseCollector.collect] can accept).
+            anchor: The anchor (without '#').
 
         Returns:
             A site-relative URL.

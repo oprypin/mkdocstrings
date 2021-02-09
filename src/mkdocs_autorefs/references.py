@@ -11,7 +11,7 @@ from markdown.inlinepatterns import REFERENCE_RE, ReferenceInlineProcessor
 
 AUTO_REF_RE = re.compile(r'<span data-mkdocstrings-identifier=("?)(?P<identifier>[^"<>]*)\1>(?P<title>.*?)</span>')
 """
-A regular expression to match mkdocstrings' special reference markers
+A regular expression to match mkdocs-autorefs' special reference markers
 in the [`on_post_page` hook][mkdocs_autorefs.plugin.AutorefsPlugin.on_post_page].
 """
 
@@ -194,6 +194,6 @@ class AutorefsExtension(Extension):
         """
         md.inlinePatterns.register(
             AutoRefInlineProcessor(md),
-            "mkdocstrings",
+            "mkdocs-autorefs",
             priority=168,  # Right after markdown.inlinepatterns.ReferenceInlineProcessor
         )
